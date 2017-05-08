@@ -25,8 +25,6 @@ public class Employee {
     }
 
 
-    //Do I need this initial constructor if I have the setId(int id) method?
-    //Which one is better to use?
     public Employee(int id) {
         this.id = id;
     }
