@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Id: "
+                android:id="@+id/employeeFormIdTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/employeeFormIdEditText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/employeeFormIdTextView2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="First Name"
+                android:id="@+id/employeeFormFirstNameTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/employeeFormFirstNameEditText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Last Name: "
+                android:id="@+id/employeeFormLastNameTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/employeeFormLastNameEditText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Phone Number: "
+                android:id="@+id/employeeFormPhoneNumberTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/employeeFormPhoneNumberEditText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="DOB: "
+                android:id="@+id/employeeFormDOBTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/employeeFormDOBEditText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="Home Address: "
+                android:id="@+id/employeeFormAddressTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="100"
+                android:id="@+id/employeeFormAddressEditText"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:text="SIN: "
+                android:id="@+id/employeeFormSINTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text=""
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="100"
+                android:id="@+id/employeeFormSINEditText"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:enabled="false"
+            android:id="@+id/employeeFormMultiModeButton"
+            android:onClick="onAddButtonClick"/>
+
+    </LinearLayout>
+</ScrollView>
